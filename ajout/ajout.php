@@ -1,34 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Ajout</title>
 </head>
-
 <body>
-    
-    <br><br>
-    <a href="../index.php">Acceuil</a>
-    <br><br>
-    <form action="affich.php" method="post">
-
-        <label for="titre">Titre : </label>
-        <input type="text" name="titre" id="titre">
-        <br><br>
-        <label for="auteur">auteur : </label>
-        <input type="text" name="auteur" id="auteur">
-        <br><br>
-        <label for="genre">Genre : </label>
-        <input type="text" name="genre" id="genre">
-        <br><br>
-        <label for="proprio">Propriétaire : </label>
-        <input type="text" name="proprio" id="proprio">
-        <br><br>
-
-        <input type="submit" value="Envoyer">
-
+    <h1>Ajouter un livre</h1>
+    <p><a href="../index.php">Accueil</a></p>
+    <form action="enregistrer_livre.php" method="post">
+        <p>Titre : <input type="text" name="titre" required></p>
+        <p>Auteur : <input type="text" name="auteur" required></p>
+        <p>Genre : <input type="text" name="genre" required></p>
+        <p>Propriétaire : <input type="text" name="proprio" required></p>
+        <p><input type="submit" value="Envoyer"></p>
     </form>
 </body>
-
 </html>
